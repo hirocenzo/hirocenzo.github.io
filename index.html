@@ -1,1 +1,574 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paul Tristan Dujali | Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Modern sans-serif font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            /* Added for larger text */
+        }
+
+        /* Custom Scrollbar Styles */
+        ::-webkit-scrollbar {
+            width: 12px;
+            background: #e2e8f0;
+            /* fallback background */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #1e3a8a;
+            /* navy blue */
+            border-radius: 8px;
+            border: 2px solid #e2e8f0;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #172554;
+            /* darker navy on hover */
+        }
+
+        /* For Firefox */
+        html {
+            scrollbar-color: #1e3a8a #e2e8f0;
+            scrollbar-width: thin;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<!-- Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+</head>
+
+<body class="bg-slate-100 text-gray-800 text-base min-h-screen scroll-smooth">
+
+    <nav id="navbar"
+        class="fixed top-0 left-0 right-0 bg-slate-50 z-50 text-base py-4 px-8 shadow flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+            <img src="assets/portfolio.svg" alt="Logo" class="h-10 w-30 ml-36">
+            <span class="font-semibold text-sm">PORTFOLIO</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="space-x-6 font-semibold text-sm">
+            <a href="#home" data-link="home" class="nav-link text-sky-600 hover:underline">Home</a>
+            <a href="#about" data-link="about" class="nav-link text-sky-600 hover:underline">About</a>
+            <a href="#skills" data-link="skills" class="nav-link text-sky-600 hover:underline">Skills</a>
+            <a href="#education" data-link="education" class="nav-link text-sky-600 hover:underline">Education</a>
+            <a href="#projects" data-link="projects" class="nav-link text-sky-600 hover:underline">Projects</a>
+            <a href="#experience" data-link="experience" class="nav-link text-sky-600 hover:underline">Experience</a>
+            <a href="#certificates" data-link="certificates"
+                class="nav-link text-sky-600 hover:underline">Certificates</a>
+            <a href="#contact" data-link="contact" class="nav-link text-sky-600 hover:underline">Contact</a>
+        </div>
+    </nav>
+
+    <main class="pt-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Home -->
+        <section id="home" class="py-10" data-aos="zoom-in">
+            <div class="bg-slate-50 border-4 border-slate-300 p-10 rounded-lg shadow-lg">
+                <div class="grid md:grid-cols-2 items-center gap-12 px-6">
+                    <!-- Left content -->
+                    <div class="text-center md:text-left">
+                        <h1 class="text-3xl md:text-5xl font-bold text-gray-800 ml-10">
+                            Good Day, <br />
+                            I'm <span class="text-sky-600">Paul Tristan</span>
+                        </h1>
+                        <p class="mt-4 text-lg text-gray-600 font-medium ml-10">I am into Web Development</p>
+
+                        <a href="#about"
+                            class="inline-block mt-6 px-6 py-3 bg-sky-600 text-white rounded-lg shadow hover:bg-sky-700 transition text-sm ml-10">
+                            About Me ↓
+                        </a>
+
+                        <!-- Social Icons -->
+                        <div class="flex justify-center md:justify-start mt-6 gap-4">
+                            <a href="https://www.linkedin.com/in/paul-tristan-dujali-b6681a307" target="_blank">
+                                <img src="assets/icons/linkedin.png" alt="LinkedIn" class="h-6 w-6 ml-12" />
+                            </a>
+                            <a href="https://github.com/hirocenzo" target="_blank">
+                                <img src="assets/icons/github.png" alt="GitHub" class="h-6 w-6" />
+                            </a>
+                            <a href="https://facebook.com/paultristandujali" target="_blank">
+                                <img src="assets/icons/facebook.png" alt="Facebook" class="h-6 w-6" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right image -->
+                    <div class="flex justify-center">
+                        <img src="assets/profile.jpg" alt="Avatar"
+                            class="rounded-full h-64 w-64 object-cover border-8 border-sky-600 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="w-full h-4 bg-slate-200 my-8 rounded"></div>
+        <!-- About Me -->
+        <section id="about" class="py-10" data-aos="fade-left">
+            <div class="bg-slate-50 border-4 border-slate-300 p-10 rounded-lg shadow-lg">
+                <h2 class="text-2xl text-center font-bold text-gray-800 mb-10 flex justify-center items-center gap-2">
+                    <img src="assets/sectionicons/about.svg" alt="About Me Icon" class="h-6 w-6 object-contain" />
+                    <span>About Me</span>
+                </h2>
+                <div class="grid md:grid-cols-2 items-center gap-10">
+                    <!-- Image -->
+                    <div class="flex justify-center">
+                        <img src="assets/profile_buda2.png" alt="Profile"
+                            class="rounded-lg shadow-lg w-72 h-auto hover:scale-105 hover:shadow-xl transition-transform duration-300">
+                    </div>
+
+                    <!-- Text Info -->
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-1">I'm Paul Tristan</h3>
+                        <p class="text-sm font-semibold text-sky-700 mb-3">Aspiring Full Stack Developer</p>
+                        <p class="text-gray-700 leading-relaxed text-sm mb-4">
+                            I am a Computer Science student based in Davao City. I am passionate about creating
+                            beautiful,
+                            functional websites and improving my development skills using HTML, CSS, PHP, MySQL,
+                            JavaScript, and Laravel.
+                            I'm constantly building and experimenting with new tools to improve my craft.
+                        </p>
+                        <p class="text-sm text-gray-800">
+                            <span class="font-semibold text-gray-600">Email:</span>
+                            <a href="mailto:hirocenzo@gmail.com" class="text-sky-600 hover:underline">
+                                paultristandujali@gmail.com</a>
+                        </p>
+                        <p class="text-sm text-gray-800 mt-1">
+                            <span class="font-semibold text-gray-600">Place:</span> Davao City, Philippines
+                        </p>
+                        <a href="assets/resume.pdf" target="_blank" rel="noopener"
+                            class="inline-block mt-6 px-6 py-2 bg-sky-600 text-white text-sm rounded hover:bg-sky-700 transition shadow">
+                            Resume →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="w-full h-4 bg-slate-200 my-8 rounded"></div>
+        <!-- Skills -->
+        <section id="skills" class="py-10" data-aos="fade-right">
+            <div class="bg-slate-50 border-4 border-slate-300 p-10 rounded-lg shadow-lg">
+                <h2 class="text-3xl font-bold text-gray-800 text-center flex justify-center items-center gap-3 mb-10">
+                    <img src="assets/sectionicons/skills.svg" alt="Skills Icon" class="h-8 w-8 object-contain" />
+                    <span>Skills</span>
+                </h2>
+                <div class="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <div
+                        class="bg-white border-2 border-sky-100 rounded-lg flex flex-col items-center p-4 shadow hover:scale-110 hover:shadow-lg transition-transform duration-200">
+                        <img src="assets/icons/html5.svg" alt="HTML" class="h-10 w-10 mb-2" />
+                        <span class="text-gray-800 font-semibold text-sm">HTML5</span>
+                    </div>
+                    <div
+                        class="bg-white border-2 border-sky-100 rounded-lg flex flex-col items-center p-4 shadow hover:scale-110 hover:shadow-lg transition-transform duration-200">
+                        <img src="assets/icons/css3.svg" alt="CSS" class="h-10 w-10 mb-2" />
+                        <span class="text-gray-800 font-semibold text-sm">CSS3</span>
+                    </div>
+                    <div
+                        class="bg-white border-2 border-sky-100 rounded-lg flex flex-col items-center p-4 shadow hover:scale-110 hover:shadow-lg transition-transform duration-200">
+                        <img src="assets/icons/php.svg" alt="PHP" class="h-10 w-10 mb-2" />
+                        <span class="text-gray-800 font-semibold text-sm">PHP</span>
+                    </div>
+                    <div
+                        class="bg-white border-2 border-sky-100 rounded-lg flex flex-col items-center p-4 shadow hover:scale-110 hover:shadow-lg transition-transform duration-200">
+                        <img src="assets/icons/laravel.svg" alt="Laravel" class="h-10 w-10 mb-2" />
+                        <span class="text-gray-800 font-semibold text-sm">Laravel</span>
+                    </div>
+                    <div
+                        class="bg-white border-2 border-sky-100 rounded-lg flex flex-col items-center p-4 shadow hover:scale-110 hover:shadow-lg transition-transform duration-200">
+                        <img src="assets/icons/mysql.svg" alt="MySQL" class="h-10 w-10 mb-2" />
+                        <span class="text-gray-800 font-semibold text-sm">MySQL</span>
+                    </div>
+                    <div
+                        class="bg-white border-2 border-sky-100 rounded-lg flex flex-col items-center p-4 shadow hover:scale-110 hover:shadow-lg transition-transform duration-200">
+                        <img src="assets/icons/firebase.svg" alt="Firebase" class="h-10 w-10 mb-2" />
+                        <span class="text-gray-800 font-semibold text-sm">Firebase</span>
+                    </div>
+                    <div
+                        class="bg-white border-2 border-sky-100 rounded-lg flex flex-col items-center p-4 shadow hover:scale-110 hover:shadow-lg transition-transform duration-200">
+                        <img src="assets/icons/java.svg" alt="Java" class="h-10 w-10 mb-2" />
+                        <span class="text-gray-800 font-semibold text-sm">Java</span>
+                    </div>
+                    <div
+                        class="bg-white border-2 border-sky-100 rounded-lg flex flex-col items-center p-4 shadow hover:scale-110 hover:shadow-lg transition-transform duration-200">
+                        <img src="assets/icons/javascript.png" alt="JavaScript" class="h-10 w-10 mb-2" />
+                        <span class="text-gray-800 font-semibold text-sm">JavaScript</span>
+                    </div>
+                    <div
+                        class="bg-white border-2 border-sky-100 rounded-lg flex flex-col items-center p-4 shadow hover:scale-110 hover:shadow-lg transition-transform duration-200">
+                        <img src="assets/icons/python.svg" alt="Python" class="h-10 w-10 mb-2" />
+                        <span class="text-gray-800 font-semibold text-sm">Python</span>
+                    </div>
+                    <div
+                        class="bg-white border-2 border-sky-100 rounded-lg flex flex-col items-center p-4 shadow hover:scale-110 hover:shadow-lg transition-transform duration-200">
+                        <img src="assets/icons/tailwindcss.svg" alt="Tailwind CSS" class="h-10 w-10 mb-2" />
+                        <span class="text-gray-800 font-semibold text-sm">Tailwind CSS</span>
+                    </div>
+                    <!-- Add more skills as needed, following the above pattern -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="w-full h-4 bg-slate-200 my-8 rounded"></div>
+        <!-- Education -->
+        <section id="education" class="py-10" data-aos="fade-left">
+            <div class="bg-slate-50 border-4 border-slate-300 p-10 rounded-lg shadow-lg">
+                <h2 class="text-2xl text-center font-bold text-gray-800 mb-2 flex justify-center items-center gap-2">
+                    <img src="assets/sectionicons/education.svg" alt="Education Icon" class="h-8 w-8 object-contain" />
+                    <span>Education</span>
+                </h2>
+
+                <!-- First School Card -->
+                <div class="flex flex-col md:flex-row bg-white rounded-xl shadow-lg overflow-hidden mb-6">
+                    <img src="assets/education_um.jpg" alt="School 1" class="md:w-1/3 w-full object-cover" />
+                    <div class="flex-1 p-6 flex flex-col justify-center">
+                        <h3 class="text-xl md:text-2xl font-bold text-sky-700 mb-1">Bachelor of Science in Computer
+                            Science</h3>
+                        <p class="text-gray-700 mb-2">University of Mindanao</p>
+                        <span class="text-orange-700 font-semibold text-lg mb-1">2019-2025 | Pursuing</span>
+                    </div>
+                </div>
+
+                <!-- Second School Card -->
+                <div class="flex flex-col md:flex-row bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="assets/education_als.jpg" alt="School 2" class="md:w-1/3 w-full object-cover" />
+                    <div class="flex-1 p-6 flex flex-col justify-center">
+                        <h3 class="text-xl md:text-2xl font-bold text-sky-700 mb-1">Alternative Learning System</h3>
+                        <p class="text-gray-700 mb-2">Matina ALS CLC</p>
+                        <span class="text-green-700 font-semibold text-lg mb-1">2018-2019 | Completed</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="w-full h-4 bg-slate-200 my-8 rounded"></div>
+        <!-- Projects -->
+        <section id="projects" class="py-10" data-aos="fade-right">
+            <div class="bg-slate-50 border-4 border-slate-300 p-10 rounded-lg shadow-lg">
+                <h2 class="text-2xl text-center font-bold text-gray-800 mb-10 flex justify-center items-center gap-2">
+                    <img src="assets/sectionicons/projects.svg" alt="Projects Icon" class="h-8 w-8 object-contain" />
+                    <span>Projects</span>
+                </h2>
+                <div class="grid gap-6 sm:grid-cols-2">
+                    <div class="bg-slate-50 border-4 border-slate-400 p-4 rounded shadow-lg flex flex-col">
+                        <img src="assets/projects/jasrajsargun.png" alt="Student Attendance System"
+                            class="w-full h-64 sm:h-80 object-cover rounded-t-lg mb-4 cursor-pointer transition-transform duration-300 hover:scale-105"
+                            onclick="openProjectModal(0)" />
+                        <h3 class="text-lg text-gray-700 mb-2">Jasraj Sargun Automotive Supplies</h3>
+                        <p class="text-sm text-gray-700 mb-3">Jasraj Sargun Automotive Supplies is an online store built
+                            with Laravel, PHP, MySQL, CSS, and JavaScript. Customers can easily browse and order a wide
+                            range
+                            of automotive products, with a responsive interface and streamlined ordering experience.</p>
+                        <a href="https://github.com/hirocenzo/jasraj-sargun-osp" target="_blank" rel="noopener"
+                            class="text-sky-600 hover:underline text-xs">
+                            View on GitHub →
+                        </a>
+                    </div>
+                    <div class="bg-slate-50 border-4 border-slate-400 p-4 rounded shadow-lg flex flex-col">
+                        <img src="assets/projects/barangay.png" alt="Barangay Complaint Management System"
+                            class="w-full h-64 sm:h-80 object-cover rounded-t-lg mb-4 cursor-pointer transition-transform duration-300 hover:scale-105"
+                            onclick="openProjectModal(1)" />
+                        <h3 class="text-lg text-gray-700 mb-2">Barangay Complaint Management System</h3>
+                        <p class="text-sm text-gray-700 mb-3">Developed using Python and Lua.</p>
+                        <a href="https://github.com/hirocenzo/barangay-complaint-system" target="_blank" rel="noopener"
+                            class="text-sky-600 hover:underline text-xs">
+                            View on GitHub →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="w-full h-4 bg-slate-200 my-8 rounded"></div>
+        <!-- Experience -->
+        <section id="experience" class="py-10" data-aos="fade-left">
+            <div class="bg-slate-50 border-4 border-slate-300 p-10 rounded-lg shadow-lg">
+                <h2 class="text-2xl text-center font-bold text-gray-800 mb-10 flex justify-center items-center gap-2">
+                    <img src="assets/sectionicons/experience.svg" alt="Experience Icon"
+                        class="h-8 w-8 object-contain" />
+                    <span>Experience</span>
+                </h2>
+                <div class="flex items-center gap-6 mb-2">
+                    <img src="assets/csg.png" alt="College Student Government Logo"
+                        class="w-20 h-20 object-contain rounded shadow" />
+                    <div>
+                        <strong class="text-sky-600">Committee Member — University of Mindanao — CCE CSG</strong><br />
+                        School Year 2022-2023<br />
+                        Coordinated student events, managed communications, and contributed to student welfare
+                        initiatives.
+                    </div>
+                </div>
+                <div class="flex items-center gap-6 mb-2 mt-6">
+                    <img src="assets/mplphs9.png" alt="MPL-PH Logo" class="w-20 h-20 object-contain rounded shadow" />
+                    <div>
+                        <strong class="text-sky-600">Assistant Event Moderator — Mobile Legends (MPL-PH Season
+                            9)</strong><br />
+                        February 2022 – May 2022<br />
+                        Assisted the operations head in creating web event content, building and editing data sheets.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="w-full h-4 bg-slate-200 my-8 rounded"></div>
+        <!-- Certificates -->
+        <section id="certificates" class="py-10" data-aos="fade-right">
+            <div class="bg-slate-50 border-4 border-slate-300 p-10 rounded-lg shadow-lg">
+                <h2 class="text-2xl text-center font-bold text-gray-800 mb-10 flex justify-center items-center gap-2">
+                    <img src="assets/sectionicons/certificates.svg" alt="Certificates Icon"
+                        class="h-8 w-8 object-contain" />
+                    <span>Certificates</span>
+                </h2>
+                <div class="grid gap-4 sm:grid-cols-2">
+                    <div>
+                        <div>
+                            <a href="assets/certificates/certiport_htmlcss.png" target="_blank">
+                                <img src="assets/certificates/certiport_htmlcss.png"
+                                    alt="Certiport HTML & CSS Certificate"
+                                    class="rounded shadow-md border hover:scale-105 transition-transform duration-300" />
+                            </a>
+                            <a href="https://www.credly.com/badges/c5478dea-59b5-4e3f-bc44-14376dbb6ca8/public_url"
+                                target="_blank"
+                                class="bg-sky-900 text-white px-6 py-2 rounded hover:bg-sky-800 text-xs font-semibold mt-4 mx-auto block text-center transition w-32">
+                                Verify
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <a href="assets/certificates/certiport_databases.png" target="_blank">
+                                <img src="assets/certificates/certiport_databases.png"
+                                    alt="Certiport Databases Certificate"
+                                    class="rounded shadow-md border hover:scale-105 transition-transform duration-300" />
+                            </a>
+                            <a href="https://www.credly.com/badges/bfa83d21-06a5-41a1-a97f-aa53a74f6c57/public_url"
+                                target="_blank"
+                                class="bg-sky-900 text-white px-6 py-2 rounded hover:bg-sky-800 text-xs font-semibold mt-4 mx-auto block text-center transition w-32">
+                                Verify
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="w-full h-4 bg-slate-200 my-8 rounded"></div>
+        <!-- Contact -->
+        <section id="contact" class="py-10" data-aos="fade-left">
+            <div class="bg-slate-50 border-4 border-slate-300 p-10 rounded-lg shadow-lg">
+                <h2
+                    class="text-2xl text-center font-bold text-gray-800 mb-2 flex justify-center items-center gap-2 md:col-span-2">
+                    <img src="assets/sectionicons/contact.svg" alt="Contact Icon" class="h-8 w-8 object-contain" />
+                    <span>Contact</span>
+                </h2>
+                <p class="text-center text-sky-600 font-semibold mb-6">Ask me anything</p>
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="flex justify-center w-full md:w-2/3">
+                        <img src="assets/contactperson.png" alt="Contact Person"
+                            class="w-full h-auto md:w-full md:h-full max-w-none object-contain rounded-lg mb-6 md:mb-0 md:mr-4" />
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <form action="mailto:paultristandujali@gmail.com" method="POST" enctype="text/plain"
+                            class="bg-slate-50 border-4 border-slate-300 rounded-lg p-4 shadow flex flex-col gap-6 w-full max-w-sm mx-auto">
+                            <div
+                                class="flex items-center border border-gray-400 rounded-lg px-3 py-2 bg-slate-100 text-base">
+                                <span class="mr-4 text-2xl text-gray-500"><i class="fas fa-user"></i></span>
+                                <input type="text" name="Name" placeholder="Name"
+                                    class="bg-transparent outline-none w-full" />
+                            </div>
+                            <div
+                                class="flex items-center border border-gray-400 rounded-lg px-3 py-2 bg-slate-100 text-base">
+                                <span class="mr-4 text-2xl text-gray-500"><i class="fas fa-envelope"></i></span>
+                                <input type="email" name="Email" placeholder="Email"
+                                    class="bg-transparent outline-none w-full" />
+                            </div>
+                            <div
+                                class="flex items-center border border-gray-400 rounded-lg px-3 py-2 bg-slate-100 text-base">
+                                <span class="mr-4 text-2xl text-gray-500"><i class="fas fa-phone"></i></span>
+                                <input type="tel" name="Phone" placeholder="Phone"
+                                    class="bg-transparent outline-none w-full" />
+                            </div>
+                            <div
+                                class="flex items-start border border-gray-400 rounded-lg px-3 py-2 bg-slate-100 text-base">
+                                <span class="mr-4 pt-1 text-2xl text-gray-500"><i
+                                        class="fas fa-comment-dots"></i></span>
+                                <textarea name="Message" placeholder="Message"
+                                    class="bg-transparent outline-none w-full resize-none h-24"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="bg-sky-600 text-white px-4 py-2 rounded-lg shadow-xl hover:bg-sky-800 text-base font-semibold flex items-center justify-center gap-3 self-end transition">
+                                Send <svg class="w-6 h-6 ml-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-slate-50 border-t-2 border-slate-200 mt-12">
+            <div class="max-w-7xl mx-auto px-4 py-10 flex flex-col md:flex-row justify-between items-start gap-10">
+                <!-- Left: Name and Tagline -->
+                <div>
+                    <h3 class="text-2xl font-bold text-sky-800 mb-2 ml-8">Paul Tristan's Portfolio</h3>
+                    <p class="text-gray-700 mb-2 ml-8">Thank you for visiting my personal portfolio website.<br>
+                        Connect with me over socials.<br>
+                    </p>
+                </div>
+                <!-- Quick Links -->
+                <div class="w-full md:w-auto mb-8 md:mb-0">
+                    <h4 class="text-xl font-bold text-sky-600 mb-3">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#home" class="text-sky-700 hover:underline transition">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="text-sky-700 hover:underline transition">About</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="text-sky-700 hover:underline transition">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#education" class="text-sky-700 hover:underline transition">Education</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="text-sky-700 hover:underline transition">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#experience" class="text-sky-700 hover:underline transition">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#certificates" class="text-sky-700 hover:underline transition">Certificates</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="text-sky-700 hover:underline transition">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Contact Info and Socials -->
+                <div class="text-left mr-8">
+                    <h4 class="text-xl font-bold text-sky-800 mb-2">Contact Info</h4>
+                    <ul class="text-gray-700 mb-4 space-y-1">
+                        <li>
+                            <span class="inline-block w-6 text-sky-600"><i class="fas fa-phone-alt"></i></span>
+                            +63 966-569-6550
+                        </li>
+                        <li>
+                            <span class="inline-block w-6 text-sky-600"><i class="fas fa-envelope"></i></span>
+                            <a href="mailto:paultristandujali@gmail.com"
+                                class="hover:underline text-sky-700">paultristandujali@gmail.com</a>
+                        </li>
+                        <li>
+                            <span class="inline-block w-6 text-sky-600"><i class="fas fa-map-marker-alt"></i></span>
+                            Davao City, Philippines
+                        </li>
+                    </ul>
+                    <div class="flex gap-6 justify-start mt-4 text-3xl">
+                        <a href="https://www.linkedin.com/in/paul-tristan-dujali-b6681a307" target="_blank"
+                            class="text-sky-700 hover:text-sky-900 transition">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/hirocenzo" target="_blank"
+                            class="text-slate-800 hover:text-sky-900 transition">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://facebook.com/paultristandujali" target="_blank"
+                            class="text-sky-700 hover:text-sky-900 transition">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-200 mt-8 pt-4 pb-6 text-center text-gray-500 text-xs bg-slate-50">
+                © 2025 Paul Tristan Dujali — Designed with <span class="text-red-500">♥</span>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Project Modal Structure -->
+    <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-70 z-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg max-w-2xl w-full p-4 relative">
+            <button onclick="closeProjectModal()"
+                class="absolute top-2 right-2 text-2xl font-bold text-gray-500 hover:text-red-600">&times;</button>
+            <img id="modalProjectImage" src="" alt="Project Screenshot"
+                class="w-full h-96 object-contain rounded mb-4" />
+            <div class="flex justify-between">
+                <button onclick="prevModalImage()"
+                    class="bg-sky-600 text-white px-4 py-2 rounded hover:bg-sky-700 transition">&larr; Previous</button>
+                <button onclick="nextModalImage()"
+                    class="bg-sky-600 text-white px-4 py-2 rounded hover:bg-sky-700 transition">Next &rarr;</button>
+            </div>
+        </div>
+    </div>
+    <!-- Floating Resume Button -->
+    <a href="assets/resume.pdf" target="_blank" rel="noopener"
+        class="fixed left-6 bottom-6 z-40 flex items-center gap-2 px-6 py-3 bg-sky-600 text-white font-bold rounded-full shadow-lg hover:bg-sky-800 hover:scale-105 transition-all animate-bounce"
+        style="animation-iteration-count: infinite;">
+        <img src="assets/resume.png" alt="Resume Icon" class="w-4 h-5" />
+        Resume
+    </a>
+
+    <!-- Back to Top Floating Button -->
+    <button id="backToTopBtn"
+        class="hidden fixed right-6 bottom-6 z-40 w-14 h-14 rounded-full bg-sky-600 shadow-lg flex items-center justify-center hover:bg-sky-800 hover:scale-110 transition-all group"
+        onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" aria-label="Back to Top">
+        <svg class="w-8 h-8 text-white group-hover:animate-bounce" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+    <script>
+        const backToTopBtn = document.getElementById('backToTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                backToTopBtn.classList.remove('hidden');
+            } else {
+                backToTopBtn.classList.add('hidden');
+            }
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 100, // Trigger the animation 200px before the element enters the viewport (increase for later trigger)
+            duration: 1200, // Animation duration in ms
+            once: true,    // Only animate once
+            anchorPlacement: 'top-center', // Animation triggers when the top of the element hits the center of the viewport
+        });
+    </script>
+    <script src="./script.js"></script>
+    <script>
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        };
+    </script>
+</body>
+
+</html>
